@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E35" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="JiA-P6-A30">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - S3 Objects-->
+        <scene sceneID="bPA-Mv-Qtw">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJM-gE-eT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="CFu-Va-a6f" customClass="S3ViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OUB-Vy-lmz">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="buckectObjectCell" textLabel="IM3-O2-EqY" detailTextLabel="wvy-wX-Owe" style="IBUITableViewCellStyleSubtitle" id="mjs-zY-3Hg">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IM3-O2-EqY">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wvy-wX-Owe">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="M7U-Pn-9EM" kind="modal" identifier="BucketDetails" modalTransitionStyle="coverVertical" id="gwz-uj-LAB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CFu-Va-a6f" id="8pL-NT-RFe"/>
+                            <outlet property="delegate" destination="CFu-Va-a6f" id="5gJ-wG-6Mw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="S3 Objects" id="b2c-5C-m1p">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YjM-HC-s7m">
+                            <connections>
+                                <segue destination="UDr-O3-8gG" kind="modal" identifier="AddBucket" modalTransitionStyle="coverVertical" id="gmV-2C-Am5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-73" y="-511"/>
+        </scene>
+        <!--Buckect View Controller - Add Buckect-->
+        <scene sceneID="4X8-D9-Ms4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLf-Pq-ipQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="ShV-VE-OKa" customClass="BuckectViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jwy-lq-OWQ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Nombre del Bucket" id="x9K-xe-wRb">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lIx-sC-CMk">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" id="6JF-zr-DXD">
+                                                    <rect key="frame" x="0.0" y="6" width="300" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ShV-VE-OKa" id="Bez-8g-wKt"/>
+                            <outlet property="delegate" destination="ShV-VE-OKa" id="EWc-Ua-aCK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Buckect" id="NCk-NH-cDt">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="9qv-vc-qqq">
+                            <connections>
+                                <action selector="cancel:" destination="ShV-VE-OKa" id="xUF-aN-h7M"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Rrs-fT-5gi">
+                            <connections>
+                                <action selector="done:" destination="ShV-VE-OKa" id="moY-h2-ftJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameBucketTextField" destination="6JF-zr-DXD" id="OHI-IN-63p"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1153" y="-849"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hsP-Dh-XJj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZ7-d7-zib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="JiA-P6-A30" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gH7-QK-sXK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CFu-Va-a6f" kind="relationship" relationship="rootViewController" id="a4k-1i-6nn"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-619" y="-511"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Ug-qI-bQz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsS-9I-7cy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="UDr-O3-8gG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="P7X-MD-MZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ShV-VE-OKa" kind="relationship" relationship="rootViewController" id="zFi-2p-kbe"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="691" y="-857"/>
+        </scene>
+        <!--Objects View Controller - Objects in Bucket-->
+        <scene sceneID="8nu-3w-ILr">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C51-hP-fVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="ava-PA-96y" customClass="S3ObjectsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LeD-IP-zoI">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ObjectsBucket" textLabel="aQB-oT-fhc" detailTextLabel="k5p-fN-e5Q" style="IBUITableViewCellStyleSubtitle" id="t2P-7V-D7m">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aQB-oT-fhc">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k5p-fN-e5Q">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="JKm-En-Tr0" kind="modal" identifier="viewS3Object" id="6Ln-iB-IG6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ava-PA-96y" id="nTF-BO-8sx"/>
+                            <outlet property="delegate" destination="ava-PA-96y" id="HgI-M9-m4E"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Objects in Bucket" id="1DB-Ml-IRe">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="6gC-NO-dGV">
+                            <connections>
+                                <action selector="doneButton:" destination="ava-PA-96y" id="0mh-3r-Jxi"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NGT-DU-C1V">
+                            <connections>
+                                <action selector="addButton:" destination="ava-PA-96y" id="QqZ-0s-iLn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1133" y="-195"/>
+        </scene>
+        <!--Item Viewer-->
+        <scene sceneID="5SG-C1-NBg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6do-i8-5gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Clc-6f-YCO" customClass="S3ItemViewer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTW-vF-ex1">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="haR-of-cgf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gCB-ee-axr">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="36x-xs-mXJ">
+                            <connections>
+                                <action selector="buttonDone:" destination="Clc-6f-YCO" id="21U-aP-HQU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webS3Viewer" destination="haR-of-cgf" id="gBY-uJ-I2i"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1992" y="-195"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uOh-IP-HZd">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iEg-6O-enX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="M7U-Pn-9EM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="GBF-WB-PDY"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="pW6-OI-Ubv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ava-PA-96y" kind="relationship" relationship="rootViewController" id="xGT-LY-Pwa"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="706" y="-205"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FF5-dP-nc6">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quz-wE-lC7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="JKm-En-Tr0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="n0g-DV-u2O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Clc-6f-YCO" kind="relationship" relationship="rootViewController" id="hqh-B3-5MA"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1512" y="-189"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="BuckectViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BuckectViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="nameBucketTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="S3ItemViewer" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/S3ItemViewer.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonDone:"/>
+                <relationship kind="outlet" name="webS3Viewer" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="S3ObjectsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/S3ObjectsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addButton:"/>
+                <relationship kind="action" name="doneButton:"/>
+            </relationships>
+        </class>
+        <class className="S3ViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/S3ViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AA67E5B1538F1E200F4468F /* AWSiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA67E5A1538F1E200F4468F /* AWSiOSSDK.framework */; };
+		5D49760B153C2BB30029CA18 /* S3ObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D49760A153C2BB30029CA18 /* S3ObjectsViewController.m */; };
+		5D66507215211717005C327D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66507115211717005C327D /* UIKit.framework */; };
+		5D66507415211717005C327D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66507315211717005C327D /* Foundation.framework */; };
+		5D66507615211717005C327D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66507515211717005C327D /* CoreGraphics.framework */; };
+		5D66507C15211717005C327D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D66507A15211717005C327D /* InfoPlist.strings */; };
+		5D66507E15211717005C327D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66507D15211717005C327D /* main.m */; };
+		5D66508215211717005C327D /* JAMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66508115211717005C327D /* JAMAppDelegate.m */; };
+		5D66508515211717005C327D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D66508315211717005C327D /* MainStoryboard.storyboard */; };
+		5D665098152132B6005C327D /* S3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D665097152132B6005C327D /* S3ViewController.m */; };
+		5D75F585153C688100304534 /* S3Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D75F584153C688100304534 /* S3Item.m */; };
+		5D75F589153C729800304534 /* S3ItemViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D75F588153C729800304534 /* S3ItemViewer.m */; };
+		5DFFB1D615388C75009AFD19 /* BuckectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFB1D515388C75009AFD19 /* BuckectViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AA67E5A1538F1E200F4468F /* AWSiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSiOSSDK.framework; path = "../../../../Desarrollo/Frameworks/aws-ios-sdk-1-1.2.1/AWSiOSSDK.framework"; sourceTree = "<group>"; };
+		5D497609153C2BB30029CA18 /* S3ObjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3ObjectsViewController.h; sourceTree = "<group>"; };
+		5D49760A153C2BB30029CA18 /* S3ObjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3ObjectsViewController.m; sourceTree = "<group>"; };
+		5D66506D15211717005C327D /* EjemploS3enIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjemploS3enIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D66507115211717005C327D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5D66507315211717005C327D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D66507515211717005C327D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5D66507915211717005C327D /* EjemploS3enIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EjemploS3enIOS-Info.plist"; sourceTree = "<group>"; };
+		5D66507B15211717005C327D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D66507D15211717005C327D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D66507F15211717005C327D /* EjemploS3enIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EjemploS3enIOS-Prefix.pch"; sourceTree = "<group>"; };
+		5D66508015211717005C327D /* JAMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMAppDelegate.h; sourceTree = "<group>"; };
+		5D66508115211717005C327D /* JAMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMAppDelegate.m; sourceTree = "<group>"; };
+		5D66508415211717005C327D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		5D66509215211735005C327D /* AWSiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSiOSSDK.framework; path = "../../../../Desarrollo/FrameWorks/AWS/aws-ios-sdk-1.2.1/AWSiOSSDK.framework"; sourceTree = "<group>"; };
+		5D66509515211A38005C327D /* KeyS3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyS3.h; sourceTree = "<group>"; };
+		5D665096152132B6005C327D /* S3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3ViewController.h; sourceTree = "<group>"; };
+		5D665097152132B6005C327D /* S3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3ViewController.m; sourceTree = "<group>"; };
+		5D75F583153C688100304534 /* S3Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3Item.h; sourceTree = "<group>"; };
+		5D75F584153C688100304534 /* S3Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3Item.m; sourceTree = "<group>"; };
+		5D75F587153C729800304534 /* S3ItemViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3ItemViewer.h; sourceTree = "<group>"; };
+		5D75F588153C729800304534 /* S3ItemViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3ItemViewer.m; sourceTree = "<group>"; };
+		5DFFB1D415388C75009AFD19 /* BuckectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuckectViewController.h; sourceTree = "<group>"; };
+		5DFFB1D515388C75009AFD19 /* BuckectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuckectViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D66506A15211717005C327D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA67E5B1538F1E200F4468F /* AWSiOSSDK.framework in Frameworks */,
+				5D66507215211717005C327D /* UIKit.framework in Frameworks */,
+				5D66507415211717005C327D /* Foundation.framework in Frameworks */,
+				5D66507615211717005C327D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D66506215211717005C327D = {
+			isa = PBXGroup;
+			children = (
+				3AA67E5A1538F1E200F4468F /* AWSiOSSDK.framework */,
+				5D66507715211717005C327D /* EjemploS3enIOS */,
+				5D66507015211717005C327D /* Frameworks */,
+				5D66506E15211717005C327D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D66506E15211717005C327D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D66506D15211717005C327D /* EjemploS3enIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D66507015211717005C327D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D66509215211735005C327D /* AWSiOSSDK.framework */,
+				5D66507115211717005C327D /* UIKit.framework */,
+				5D66507315211717005C327D /* Foundation.framework */,
+				5D66507515211717005C327D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D66507715211717005C327D /* EjemploS3enIOS */ = {
+			isa = PBXGroup;
+			children = (
+				5D66508015211717005C327D /* JAMAppDelegate.h */,
+				5D66508115211717005C327D /* JAMAppDelegate.m */,
+				5DFFB1D415388C75009AFD19 /* BuckectViewController.h */,
+				5DFFB1D515388C75009AFD19 /* BuckectViewController.m */,
+				5D66508315211717005C327D /* MainStoryboard.storyboard */,
+				5D66507815211717005C327D /* Supporting Files */,
+				5D66509515211A38005C327D /* KeyS3.h */,
+				5D665096152132B6005C327D /* S3ViewController.h */,
+				5D665097152132B6005C327D /* S3ViewController.m */,
+				5D497609153C2BB30029CA18 /* S3ObjectsViewController.h */,
+				5D49760A153C2BB30029CA18 /* S3ObjectsViewController.m */,
+				5D75F583153C688100304534 /* S3Item.h */,
+				5D75F584153C688100304534 /* S3Item.m */,
+				5D75F587153C729800304534 /* S3ItemViewer.h */,
+				5D75F588153C729800304534 /* S3ItemViewer.m */,
+			);
+			path = EjemploS3enIOS;
+			sourceTree = "<group>";
+		};
+		5D66507815211717005C327D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D66507915211717005C327D /* EjemploS3enIOS-Info.plist */,
+				5D66507A15211717005C327D /* InfoPlist.strings */,
+				5D66507D15211717005C327D /* main.m */,
+				5D66507F15211717005C327D /* EjemploS3enIOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D66506C15211717005C327D /* EjemploS3enIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D66508B15211717005C327D /* Build configuration list for PBXNativeTarget "EjemploS3enIOS" */;
+			buildPhases = (
+				5D66506915211717005C327D /* Sources */,
+				5D66506A15211717005C327D /* Frameworks */,
+				5D66506B15211717005C327D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EjemploS3enIOS;
+			productName = EjemploS3enIOS;
+			productReference = 5D66506D15211717005C327D /* EjemploS3enIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D66506415211717005C327D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JAM;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = freelance;
+			};
+			buildConfigurationList = 5D66506715211717005C327D /* Build configuration list for PBXProject "EjemploS3enIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5D66506215211717005C327D;
+			productRefGroup = 5D66506E15211717005C327D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D66506C15211717005C327D /* EjemploS3enIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D66506B15211717005C327D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D66507C15211717005C327D /* InfoPlist.strings in Resources */,
+				5D66508515211717005C327D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D66506915211717005C327D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D66507E15211717005C327D /* main.m in Sources */,
+				5D66508215211717005C327D /* JAMAppDelegate.m in Sources */,
+				5D665098152132B6005C327D /* S3ViewController.m in Sources */,
+				5DFFB1D615388C75009AFD19 /* BuckectViewController.m in Sources */,
+				5D49760B153C2BB30029CA18 /* S3ObjectsViewController.m in Sources */,
+				5D75F585153C688100304534 /* S3Item.m in Sources */,
+				5D75F589153C729800304534 /* S3ItemViewer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5D66507A15211717005C327D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D66507B15211717005C327D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5D66508315211717005C327D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D66508415211717005C327D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D66508915211717005C327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5D66508A15211717005C327D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D66508C15211717005C327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Desarrollo/FrameWorks/AWS/aws-ios-sdk-1.2.1\"",
+					"\"$(SRCROOT)/../../../../Desarrollo/Frameworks/aws-ios-sdk-1-1.2.1\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EjemploS3enIOS/EjemploS3enIOS-Prefix.pch";
+				INFOPLIST_FILE = "EjemploS3enIOS/EjemploS3enIOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5D66508D15211717005C327D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Desarrollo/FrameWorks/AWS/aws-ios-sdk-1.2.1\"",
+					"\"$(SRCROOT)/../../../../Desarrollo/Frameworks/aws-ios-sdk-1-1.2.1\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EjemploS3enIOS/EjemploS3enIOS-Prefix.pch";
+				INFOPLIST_FILE = "EjemploS3enIOS/EjemploS3enIOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D66506715211717005C327D /* Build configuration list for PBXProject "EjemploS3enIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D66508915211717005C327D /* Debug */,
+				5D66508A15211717005C327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D66508B15211717005C327D /* Build configuration list for PBXNativeTarget "EjemploS3enIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D66508C15211717005C327D /* Debug */,
+				5D66508D15211717005C327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D66506415211717005C327D /* Project object */;
+}
